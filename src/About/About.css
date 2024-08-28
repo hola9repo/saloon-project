@@ -1,0 +1,465 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.logos {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 20px 0;
+  background-color: #f7f5f5;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos h1 {
+  position: absolute;
+  top: -20px;
+  left: 500px;
+  font-size: 40px;
+  color: #ffff;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+.logos:before {
+      left: 0;
+      background: linear-gradient(to left, rgba(232, 16, 16, 0), rgb(10, 10, 10));
+}
+.logos:after {
+      right: 0;
+      background: linear-gradient(to right, rgba(240, 12, 12, 0), rgb(8, 8, 8));
+}
+
+.logos:hover .logo-slide {
+  animation-play-state: paused;
+}
+
+.logo-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.logo-slide img {
+ height: 350px;
+ margin:  0 40px;
+}
+
+.hair-style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+@keyframes move {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(20%);
+  }
+}
+.hair-style-image{
+  display: flex;
+  position: relative;
+  width: 420px;
+  height: 520px;
+  margin: auto;
+  border: 3px solid #5a5a59;
+  animation: 0.6s move linear;
+}
+.hair-style-image2{
+  display: flex;
+  position: relative;
+  width: 420px;
+  height: 520px;
+  margin: auto;
+  border: 3px solid #5a5a59;
+  animation: 0.6s move linear;
+}
+
+.hair-style-image img{
+  display: flex;
+  position: absolute;
+  width: 420px;
+  height: 520px;
+  top: 70px;
+  left: 70px;
+  transition: 0.3s;
+}
+
+.hair-style-image img:hover{
+  transform: scale(1.03);
+}
+
+.hair-style-image2{
+  display: flex;
+  position: relative;
+  width: 420px;
+  height: 520px;
+  margin: auto;
+  border: 3px solid #5a5a59;
+  transition: 0.5s;
+}
+.hair-style-image2 img{
+  display: flex;
+  position: absolute;
+  width: 420px;
+  height: 520px;
+  top: 70px;
+  right: 70px;
+  transition: 0.3s;
+}
+
+
+.hair-style-image2 img:hover{
+  transform: scale(1.03);
+}
+
+@keyframes moves {
+  from {
+      transform: translateX(150%);
+  }
+  to {
+      transform: translateX(50%);
+  }
+}
+
+.hair-style-section{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  padding: 50px;
+  animation: 0.6s moves linear;
+}
+.hair-style-section h2{
+  color: #E7AD5C;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.hair-style-section h1{
+  font-size: 30px;
+  font-weight: 800;
+  font-family:sans-serif;
+}
+.hair-style-section p{
+  font-size: 18px;
+}
+
+.hair-style-section button{
+  width: 180px;
+  padding: 20px;
+  color: #fff;
+  background: #E7AD5C;
+  /* border-style: none; */
+  border-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.hair-style-section button:hover{
+  background: #212121;
+  transform: scale(1.05);
+  border-style: none;
+  
+}
+
+#team{
+  color:#E7AD5C;
+  margin-top: 10px;
+}
+
+.logo-head{
+  font-size: 30px;
+  font-weight: 800;
+  font-family:sans-serif;
+}
+
+.logo-head{
+  font-size: 30px;
+  font-weight: 800;
+  font-family:sans-serif;
+}
+
+
+@media screen and (max-width:885px) {
+
+  #root {
+    max-width: 885px;
+    margin: 0 auto;
+    /* padding: 0.5rem; */
+    text-align: center;
+  }
+  
+  #heading{
+    font-size: 40px;
+  }
+  .containt{
+    width: 400px;
+    padding: 30px;
+  }
+
+  .containt h2{
+    font-size: 18px;
+  }
+  .containt p{
+    font-size: 18px;
+  }
+
+  .image img{
+    width: 300px;
+    height: 350px;
+  }
+   
+  .logos {
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+  
+  .logos h1 {
+    top: 10px;
+    left: 330px;
+  }
+  
+  .logos:before,
+  .logos:after {
+    width: 150px;
+  }
+ 
+  .logo-slide img {
+   height: 300px;
+   margin:  0 10px;
+  }
+
+  .hair-style{
+   display: flex;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  .hair-style-image{
+    display: flex;
+    position: relative;
+    width: 220px;
+    height: 320px;
+  }
+  
+  .hair-style-image img{
+    display: flex;
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .hair-style-image img:hover{
+    transform: scale(1);
+  }
+  
+  .hair-style-image2{
+    display: flex;
+    position: relative;
+    width: 220px;
+    height: 320px;
+  }
+  .hair-style-image2 img{
+    display: flex;
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    top: 30px;
+    right: 30px;
+    transition: 0.3s;
+  }
+  
+  
+  .hair-style-image2 img:hover{
+    transform: scale(1.03);
+  }
+  
+  .hair-style-section{
+    display: flex;
+    width: 400px;
+    margin: 0px 40px;
+    padding: 40px;
+  }
+  .hair-style-section h2{
+    font-weight: 600;
+    margin: auto;
+  }
+  .hair-style-section h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin: auto;
+  }
+  .hair-style-section p{
+    font-size: 18px;
+  }
+  
+  .hair-style-section button{
+
+    width: 120px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.5s;
+  }
+   
+  #team{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .logo-head h1{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+}
+
+
+@media screen and (max-width: 428px) {
+  #root {
+    max-width: 428px;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    text-align: center;
+  }
+  
+  #heading{
+    margin-top: 20px;
+    font-size: 40px;
+    font-size: 30px;
+  }
+   
+  .logos {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+  }
+   
+  .logos:before,
+  .logos:after {
+    width: 60px;
+  }
+ 
+  .logo-slide img {
+   height: 150px;
+   margin:  0 5px;
+  }
+
+  .hair-style{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  
+  .hair-style-image{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 220px;
+    margin: 30px;
+  }
+  
+  .hair-style-image img{
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .hair-style-image img:hover{
+    transform: scale(1.03);
+  }
+  
+  .hair-style-image2{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 220px;
+  }
+  .hair-style-image2 img{
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    top: 10px;
+    right: 10px;
+    transition: 0.3s;
+  }
+  
+  
+  .hair-style-image2 img:hover{
+    transform: scale(1.03);
+  }
+  
+  .hair-style-section{
+    display: flex;
+    width: 100%;
+  }
+  .hair-style-section h2{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .hair-style-section h1{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .hair-style-section p{
+    font-size: 17px;
+  }
+  
+  .hair-style-section button{
+    margin: auto;
+    width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+   
+  #team{
+    margin: auto;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 50px;
+  }
+  
+  .logo-head h1{
+    font-size: 25px;
+    font-weight: 400;
+  }
+}

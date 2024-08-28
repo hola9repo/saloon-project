@@ -1,0 +1,52 @@
+.nomatchmaincontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.oopsnumber{
+    font-size: 400px;
+}
+.nomatchcontent{
+    font-size: 50px;
+}
+.nomatchbutton button{
+    text-decoration: none;
+    display: block;
+    border: 2px solid #e7ad5c;
+    color: #e7ad5c;
+    font-size: larger;
+    font-weight: 500;
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.25s ease;
+  
+    &:hover {
+      background: #e7ad5c;
+      color: #ffffff;
+    }
+}
+.nomatchmaincontainer a{
+    text-decoration: none;
+}
+
+@media screen and (width <=885px)  {
+    .oopsnumber{
+        font-size: 300px;
+    }
+    .nomatchcontent{
+        font-size: 40px;
+    }
+}
+@media screen and (width <=450px)  {
+    .oopsnumber{
+        font-size: 100px;
+        /* margin: 1px auto; */
+    }
+    .nomatchcontent{
+        font-size: 30px;
+    }
+}

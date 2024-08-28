@@ -1,0 +1,26 @@
+.post-heading , .post-container{
+  text-transform: capitalize;
+}
+.post-container{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.post-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.adv-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    /* height: 300px; */
+}
+.adv-container img {
+    height: 85%;
+}

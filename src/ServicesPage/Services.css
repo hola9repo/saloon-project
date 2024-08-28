@@ -1,0 +1,155 @@
+body {
+  background: #f8f8f8;
+}
+
+.merriweather-sans-font-style {
+  font-family: "Merriweather Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.services-container {
+  padding: 3rem 12rem;
+  background: #f1f3f6;
+}
+
+.read-more-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.read-more-cards-container .read-more-card {
+  border: 1px solid #e7ad5c;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  &:hover {
+    box-shadow: 0 0 5px #e7ad5c;
+  }
+}
+
+.read-more-cards-container .read-more-card .read-more-img {
+  width: 100%;
+  height: 100%;
+}
+
+.read-more-cards-container .read-more-card .read-more-discription {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #4b4b4b;
+  padding: 0 1.5rem;
+}
+
+.read-more-cards-container .read-more-card .read-more-btn {
+  text-decoration: none;
+  display: block;
+  border: 2px solid #e7ad5c;
+  color: #e7ad5c;
+  font-weight: 500;
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: #e7ad5c;
+    color: #ffffff;
+  }
+} 
+
+.our-services-container {
+  /* background: #f8f8f8; */
+  padding: 0rem 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.our-services-banner,
+.our-services-quote {
+  text-align: center;
+}
+
+.our-services-banner {
+  color: #e7ad5c;
+  font-weight: 100;
+  margin-top: 2rem;
+}
+
+.our-services-quote {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.our-services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.our-services-card {
+  /* width: fit-content; */
+  height: fit-content;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0 5px lightgrey;
+  transition: all 0.25s ease;
+  border: lightgrey 1px solid;
+  border-radius: 0.3rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:hover .service-type {
+    text-decoration: underline;
+  }
+
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.service-type {
+  margin-bottom: 1rem;
+}
+
+.service-charge .price {
+  font-size: 1.3rem;
+  color: #e7ad5c;
+  font-weight: 600;
+}
+
+@media screen and (width <=885px) {
+  .services-container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (width <=430px) {
+  .services-container {
+    padding: 0 1rem;
+  }
+
+  .our-services-banner {
+    font-size: .9rem;
+  }
+
+  .our-services-quote {
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+    word-spacing: unset;
+  }
+}

@@ -1,0 +1,98 @@
+.second {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-top: 10px;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.second h1 {
+  font-family: "lora", sans-serif;
+  margin: 0;
+  color: #e7ad5c;
+}
+.second p {
+  color:black;
+}
+.second p,
+h1 {
+  text-align: center;
+}
+.images {
+  /* background-color: black; */
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.images img {
+  margin: 20px;
+  height: 350px;
+  width: 350px;
+}
+.images img:hover {
+  opacity: rgba(0, 0, 0, 0.5);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease;
+}
+.image-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  padding: 9px;
+}
+.image-container:hover .overlay {
+  background-color: rgba(230, 199, 199, 0.7);
+}
+
+.overlays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlays {
+  opacity: 1;
+}
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 300px) {
+  .image-container img {
+    margin-left: 0;
+  }
+  .second {
+    font-size: 0.5rem;
+    margin-bottom: .5rem;
+    padding-top: 5px;
+}
+}
+@media screen and (width <=885px) {
+    .second {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        padding-top: 5px;
+    }
+  }

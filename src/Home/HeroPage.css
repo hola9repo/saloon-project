@@ -1,0 +1,235 @@
+.heropage-container {
+  width: 100%;
+  height: 100%;
+}
+
+.heropage-wrapper {
+  height: calc(100vh - 0.5rem);
+  width: calc(100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(1);
+  display: flex;
+  align-items: center;
+}
+
+.heropage-wrapper .hero-left,
+.heropage-wrapper .hero-right {
+  flex-basis: 50%;
+  height: 100%;
+}
+
+.hero-right {
+  background-image: url(./assets//images/fliped.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shifting-text-wrapper {
+  flex-basis: 3.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  height: 2rem;
+  position: relative;
+  top: 35%;
+}
+
+.shifting-text-wrapper * {
+  flex-basis: 3rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.5rem;
+}
+
+.shifting-text-wrapper .quotes {
+  display: block;
+  animation: 5s infinite alternate-reverse animations;
+}
+
+@keyframes animations {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    transform: translateY(-10rem);
+  }
+
+}
+
+
+
+#text-to-animate {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  height: fit-content;
+  background: transparent;
+}
+
+.style-animation-span.style-animation-span {
+  font-size: calc(1em + 7vw);
+  padding: 0 calc(0.5rem + 0.5vw);
+  position: relative;
+  opacity: 0;
+}
+
+
+span.style-animation-span:not(#dot) {
+  bottom: -200px;
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+span.style-animation-span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+span.style-animation-span:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+
+span.style-animation-span:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+
+span.style-animation-span:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
+
+#dot#dot {
+  bottom: 100px;
+  animation-name: dot;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 2.3s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+
+  70% {
+    opacity: 1;
+    bottom: 15px;
+  }
+
+  85% {
+    opacity: 1;
+    bottom: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes dot {
+  0% {
+    opacity: 0;
+    bottom: 100px;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  65% {
+    opacity: 1;
+    bottom: 15px;
+  }
+
+  75% {
+    opacity: 1;
+    bottom: 0;
+  }
+
+  90% {
+    opacity: 1;
+    bottom: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@media screen and (width<=885px) {
+  .shifting-text-wrapper {
+    top: 45%;
+  }
+
+}
+
+@media screen and (width<=430px) {
+  .heropage-wrapper {
+    flex-direction: column;
+  }
+
+  .heropage-wrapper .hero-left,
+  .heropage-wrapper .hero-right {
+    flex-basis: 50%;
+    width: 100%;
+    height: unset;
+  }
+
+  .shifting-text-wrapper {
+    flex-basis: 3.5rem;
+    /* overflow: unset; */
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    top: 35%;
+
+  }
+
+  .shifting-text-wrapper .quotes {
+    display: block;
+    font-size: 2rem;
+    animation: 5s infinite alternate-reverse animations;
+  }
+
+  @keyframes animations {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-4rem);
+    }
+
+    100% {
+      transform: translateY(-9rem);
+    }
+
+  }
+
+}

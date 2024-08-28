@@ -1,0 +1,78 @@
+.contact-container {
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-banner {
+  padding: 5rem 10rem;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.contact-link-divs {
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.contact-banner .contact-us {
+  padding-bottom: 1rem;
+}
+
+.contact-us {
+  color: #E7AD5C;
+  letter-spacing: 1.5px;
+
+}
+
+.get-in-touch {
+  font-size: 3rem;
+  font-weight: 1000;
+  letter-spacing: -3px;
+}
+
+.linking-divs {
+  border: 2px solid #E7AD5C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.linking-divs-icon {
+  background: #E7AD5C;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linking-para {
+  letter-spacing: 1px;
+}
+
+/* media qurries for small and medium screens */
+
+@media screen and (width <=885px) {
+  .contact-banner {
+    padding: 3rem 0rem;
+  }
+
+  .contact-banner .contact-us {
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .get-in-touch {
+    font-size: 2.5rem;
+    letter-spacing: unset;
+  }
+
+  .contact-link-divs {
+    padding: 3rem 1rem;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
